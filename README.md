@@ -98,6 +98,6 @@ If you'd like to contribute, follow the guidelines in the `CONTRIBUTING.md` file
 
 ## License
 
-This project is licensed under the MIT License. Feel free to use the code for educational purposes or contribute to its improvement.
+Feel free to use the code for educational purposes or contribute to its improvement.
 
 Best of luck with your Java and DSA learning journey! 🚀
