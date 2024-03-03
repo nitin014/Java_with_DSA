@@ -90,7 +90,7 @@
 
 1. Clone the repository: `git clone https://github.com/your-username/java-dsa.git`
 2. Explore the Java files for implementations and practice questions.
-3. Refer to the topics.md file for a comprehensive list of covered topics.
+3. Refer to the [topics.md](topics.md) file for a comprehensive list of covered topics.
 
 ## Contributing
 
