@@ -1,12 +1,13 @@
 
-/*  primeno  , sum , factorial */
+/* 
+* primeno  , sum , factorial */
 
 import java.util.*;
 
 public class javaBasics8 {
     public static void main(String[] args) {
 
-        // check prime
+        // *check prime
         try (Scanner sc = new Scanner(System.in)) 
         {
             int no = sc.nextInt();
@@ -30,7 +31,7 @@ public class javaBasics8 {
                     System.out.println("not prime");
                 }
             }
-            // PRINT EVEN SUM AND ODD SUM 
+            //*  PRINT EVEN SUM AND ODD SUM 
             
             
             int y =sc.nextInt();

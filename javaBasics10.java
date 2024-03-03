@@ -26,7 +26,11 @@
 
     *What happens inside memory (temporary memory allocated)
         fn occupies memory (call stack) stores all info and task (main,fn1,fn2,variables...)
+      
 
+    *Types of methods:
+    1. user defined methods   eg:(factorial, sum , product)
+    2. Inbuilt Methods  --   present already  eg: Math(.pow, .sqrty, .max), sc.nextInt()
 */
 
 
@@ -83,6 +87,16 @@ public class javaBasics10 {
        return f;
     }
 
+    // find Bionomial Coefficient
+       public static int binCoeff(int n, int r)
+       {
+          int n_fact = factorial(n);
+          int r_fact = factorial(r);
+          int fact = factorial(n-r);
+          int bincoeff = n_fact/(r_fact*fact);
+          return bincoeff;
+       }
+
   public static void main(String args[]) {
         printHelloWorld(); // fn call
         printHelloWorld();
@@ -106,7 +120,9 @@ public class javaBasics10 {
         System.out.println("product="+mul);
 
         //int fact=factorial(5);
-        System.out.println("Factorial="+factorial(75));
+        System.out.println("Factorial="+factorial(5));
+
+        System.out.println("binomial_coefficient="+binCoeff(5,2));
     }
 }
  

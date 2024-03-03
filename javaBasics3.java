@@ -65,7 +65,7 @@ public class javaBasics3 {
                           T-- F T
                           F-- F F
 
-              !  (NOT)    F--T
+              !=  (NOT)    F--T
                           T--F
 
                  -- Operator precedence determines the order in which the operators in an expression are
