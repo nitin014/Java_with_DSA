@@ -46,14 +46,37 @@ public class javaBasics14Array3 {
    }
 
    /*
-    * Buy and Sell Stocks : 
+    * Buy and Sell Stocks : you are given array price where price[i] is the price of given stock on i'th day.
+                           you want to maximize your profit by choosing a single day to buy one stock and choosing a different day to sell that stock.
+                           Return maximum profit you can achieve from this transaction. if you cannot achieve profit return 0.
     */
 
-    
+   public static int buyAndSellStock(int price[]) // O(n)
+   {
+      int buyPrice = Integer.MAX_VALUE;
+      int maxProfit = 0;
+      for(int i = 0; i < price.length; i++)
+      {
+         if(buyPrice < price[i]) // profit
+         {
+            int profit = price[i] - buyPrice; // todays Profit
+            maxProfit = Math.max(maxProfit, profit);
+         }
+         else 
+         {
+            buyPrice = price[i]; 
+         }
+      }
+      return maxProfit;
+   }
+
    public static void main(String[] args)
    {
       int height[] = {4,2,0,6,3,2,5};
       System.out.println("Water trapped : "+trappedRainWater(height));
+
+      int price[] = {7,1,5,3,6,4};
+      System.out.println("Max Profit for selling stock = "+buyAndSellStock(price));
    } 
 }
  
